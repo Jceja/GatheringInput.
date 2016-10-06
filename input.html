@@ -4,15 +4,21 @@
    <title> Gathering Input </title>
    <script>
    function getName(){
-var fullName;
+var fullName, fullName1;
 fullName = document.getElementById("first").vaule;
-document.getElementById("message").innerHtml = fullName;
+fullName1 = document.getElementById("last").vaule;
+document.getElementById("message").innerHTML = fullName + fullName1;
 }
 </script>
- </head>
+  <form action="demo_form.asp">
   <body>
+
     <input type="text" id="first">
     <input type="text" id="last">
-    <button type="button" id="doneButton" onclick="getName()">Done
+    <button type="button" id="doneButton" onclick="getName();">Done
     <p id="message"> </p>
+
+  </body>
+  </form>
+   </head>
  </html>
